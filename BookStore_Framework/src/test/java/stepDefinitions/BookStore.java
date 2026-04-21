@@ -61,7 +61,28 @@ public class BookStore {
         }
     }
 
-    
+
+
+
+    @Given("invalid ISBN is prepared")
+    public void invalidISBN() {
+        isbn = invalidIsbn;
+    }
+
+    @When("I send a GET request to fetch book by ISBN")
+    public void getBookByISBN() {
+        response = given()
+                .queryParam("ISBN", isbn)
+        .when()
+                .get("/BookStore/v1/Book");
+    }
+
+
+    @Given("valid token and multiple ISBNs are available")
+    public void validMultipleISBN() {
+        fetchISBNs();
+    }
+
     @Given("valid token and invalid ISBN are available")
     public void invalidISBNAdd() {
         isbn = invalidIsbn;
@@ -99,7 +120,12 @@ public class BookStore {
 
   
 
-   
+
+    @Given("valid token userId and same ISBN are available")
+    public void sameISBN() {
+        setupForUpdate();
+        secondIsbn = isbn;
+    }
 
     @Given("valid token userId and invalid ISBN are available for update")
     public void invalidUpdate() {
@@ -107,7 +133,7 @@ public class BookStore {
         secondIsbn = invalidIsbn;
     }
 
-	@Given("invalid token with valid userId and ISBN are available")
+    @Given("invalid token with valid userId and ISBN are available")
     public void invalidTokenUpdate() {
         setupForUpdate();
         token = "invalid_token";
@@ -126,12 +152,38 @@ public class BookStore {
         .when()
                 .put("/BookStore/v1/Books/" + isbn);
 
-        token = originalToken; // restore
+        token = originalToken; 
     }
 
    
+    @When("I send a DELETE request to remove book")
+    public void deleteBook() {
 
+        requestBody = "{ \"isbn\": \"" + isbn + "\", \"userId\": \"" + userId + "\" }";
+
+        response = given()
+                .contentType(ContentType.JSON)
+                .header("Authorization", "Bearer " + token)
+                .body(requestBody)
+        .when()
+                .delete("/BookStore/v1/Book");
+    }
    
+    @When("I send a DELETE request to remove book again")
+    public void deleteAgain() {
+        deleteBook();
+    }
+
+    @When("I verify the user still exists")
+    public void verifyUserExists() {
+
+        response = given()
+                .header("Authorization", "Bearer " + token)
+        .when()
+                .get("/Account/v1/User/" + userId);
+    }
+
+  
     @Given("valid userId without token is available")
     public void noToken() {
         token = "";
