@@ -1,5 +1,5 @@
-#Author : Ganesh , Sabarinathan
-#Created On : 20-04-2026
+#Author : Ganesh ,Sabarinathan,Joseph 
+#Created On : 21-04-2026
 #Module : Book
 
 Feature: BookStore Book API Tests
@@ -7,7 +7,16 @@ Feature: BookStore Book API Tests
   Background:
     Given The BookStore API base URL is set
 
+  @BookStoreWebAPI01TC_18
+  Scenario: Retrieve all books
+    When I send a GET request to fetch all books
+    Then the response status should be 200
 
+  @BookStoreWebAPI01TC_19
+  Scenario: Retrieve book with valid ISBN
+    Given valid ISBN is available
+    When I send a GET request to fetch book by ISBN
+    Then the response status should be 200
 
   @BookStoreWebAPI01TC_20
   Scenario: Retrieve book with invalid ISBN
@@ -15,7 +24,11 @@ Feature: BookStore Book API Tests
     When I send a GET request to fetch book by ISBN
     Then the response status should be 400
 
-
+  @BookStoreWebAPI01TC_21
+  Scenario: Add book with valid ISBN and token
+    Given valid token and ISBN are available
+    When I send a POST request to add a book
+    Then the response status should be 201
 
   @BookStoreWebAPI01TC_22
   Scenario: Add multiple books with valid token
@@ -29,7 +42,11 @@ Feature: BookStore Book API Tests
     When I send a POST request to add a book
     Then the response status should be 400
 
-
+  @BookStoreWebAPI01TC_24
+  Scenario:  Replace book with different valid ISBN
+    Given valid token userId and ISBN are available
+    When I send a PUT request to replace book
+    Then the response status should be 200
 
   @BookStoreWebAPI01TC_25
   Scenario: Replace book with same ISBN 
@@ -49,7 +66,18 @@ Feature: BookStore Book API Tests
     When I send a PUT request to replace book
     Then the response status should be 401
 
-  
+  @BookStoreWebAPI01TC_28
+  Scenario: Delete book with valid ISBN and token
+    Given valid token userId and ISBN are available
+    When I send a DELETE request to remove book
+    Then the response status should be 204
+
+  @BookStoreWebAPI01TC_29
+  Scenario: Verify user exists after book deletion
+    Given valid token userId and ISBN are available
+    When I send a DELETE request to remove book
+    And I verify the user still exists
+    Then the response status should be 200
 
   @BookStoreWebAPI01TC_30
   Scenario: Delete book with invalid ISBN
