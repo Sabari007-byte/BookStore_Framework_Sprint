@@ -61,8 +61,15 @@ public class BookStore {
         }
     }
 
+    @When("I send a GET request to fetch all books")
+    public void getAllBooks() {
+        response = given().when().get("/BookStore/v1/Books");
+    }
 
-
+    @Given("valid ISBN is available")
+    public void validISBN() {
+        fetchISBNs();
+    }
 
     @Given("invalid ISBN is prepared")
     public void invalidISBN() {
@@ -77,6 +84,10 @@ public class BookStore {
                 .get("/BookStore/v1/Book");
     }
 
+    @Given("valid token and ISBN are available")
+    public void validTokenISBN() {
+        fetchISBNs();
+    }
 
     @Given("valid token and multiple ISBNs are available")
     public void validMultipleISBN() {
@@ -120,6 +131,13 @@ public class BookStore {
 
   
 
+    @Given("valid token userId and ISBN are available")
+    public void setupForUpdate() {
+
+        cleanUserBooks();
+        fetchISBNs();
+        addBookToUser();
+    }
 
     @Given("valid token userId and same ISBN are available")
     public void sameISBN() {
@@ -152,10 +170,16 @@ public class BookStore {
         .when()
                 .put("/BookStore/v1/Books/" + isbn);
 
-        token = originalToken; 
+        token = originalToken; // restore
     }
 
    
+
+    @Given("valid token userId and invalid ISBN are available for delete")
+    public void invalidDelete() {
+        isbn = invalidIsbn;
+    }
+
     @When("I send a DELETE request to remove book")
     public void deleteBook() {
 
@@ -168,7 +192,7 @@ public class BookStore {
         .when()
                 .delete("/BookStore/v1/Book");
     }
-   
+
     @When("I send a DELETE request to remove book again")
     public void deleteAgain() {
         deleteBook();
