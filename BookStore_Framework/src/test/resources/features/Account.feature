@@ -1,4 +1,4 @@
-#Author: ARISH
+#Author: ARISH ,VEERESHWAR
 #Created On: 21-04-2026
 #Module: Account
 
@@ -25,6 +25,17 @@ Feature: BookStore Account API Tests
     When I send a POST request to create a user
     Then the response status should be 400
 
+  @BookStoreWebAPI01TC_04
+  Scenario: Create user with space username
+    Given empty user payload is prepared
+    When I send a POST request to create a user
+    Then the response status should be 400
+
+  @BookStoreWebAPI01TC_05
+  Scenario: Generate token with invalid JSON body
+    Given invalid JSON payload is prepared
+    When I send a POST request to create a user
+    Then the response status should be 400
 
   @BookStoreWebAPI01TC_06
   Scenario: Generate token with valid credentials
@@ -38,6 +49,17 @@ Feature: BookStore Account API Tests
     When I send a POST request to generate token
     Then the response status should be 401
 
+  @BookStoreWebAPI01TC_08
+  Scenario: Generate token with wrong password 
+    Given invalid password is prepared
+    When I send a POST request to generate token
+    Then the response status should be 401
+
+  @BookStoreWebAPI01TC_09
+  Scenario: Generate token with extra field 
+    Given user payload with extra invalid field is prepared
+    When I send a POST request to generate token
+    Then the response status should be 400
 
   @BookStoreWebAPI01TC_10
   Scenario: Validate authorization with valid token
@@ -51,12 +73,23 @@ Feature: BookStore Account API Tests
     When I send a POST request to authorize user
     Then the response status should be 401
 
+  @BookStoreWebAPI01TC_12
+  Scenario: Validate authorization with no token 
+    Given no token is provided
+    When I send a POST request to authorize user
+    Then the response status should be 401
+
   @BookStoreWebAPI01TC_13
   Scenario: Fetch user with valid UUID
     Given valid user ID is available
     When I send a GET request to fetch user
     Then the response status should be 200
 
+  @BookStoreWebAPI01TC_14
+  Scenario: Fetch user with invalid UUID 
+    Given invalid user ID is prepared
+    When I send a GET request to fetch user
+    Then the response status should be 404
 
   @BookStoreWebAPI01TC_15
   Scenario: Delete user with valid UUID and token
@@ -64,4 +97,14 @@ Feature: BookStore Account API Tests
     When I send a DELETE request to delete user
     Then the response status should be 204
 
- 
+  @BookStoreWebAPI01TC_16
+  Scenario: Delete user with invalid UUID 
+    Given invalid user ID is prepared
+    When I send a DELETE request to delete user
+    Then the response status should be 404
+
+  @BookStoreWebAPI01TC_17
+  Scenario: Delete user without token
+    Given no token is provided
+    When I send a DELETE request to delete user
+    Then the response status should be 401
