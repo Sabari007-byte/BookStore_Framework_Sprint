@@ -13,11 +13,12 @@ import org.apache.poi.ss.usermodel.WorkbookFactory;
 
 public class ExcelReader {
 
-    private static String automationFilePath() {
-        return new File("").getAbsolutePath() + File.separator
-                + "src" + File.separator + "test" + File.separator
-                + "resources" + File.separator + "New_Test.xlsx";
-    }
+	private static String automationFilePath() {
+	    return new File("").getAbsolutePath() + File.separator
+	            + "src" + File.separator + "test" + File.separator
+	            + "resources" + File.separator + "testdata" + File.separator
+	            + "testcase.xlsx";
+	}
 
     public static final int COL_TC_ID    = 0;
     public static final int COL_METHOD   = 1;
