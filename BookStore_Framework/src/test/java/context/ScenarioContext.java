@@ -5,18 +5,13 @@ import java.util.Map;
 
 public class ScenarioContext {
 
-    private static final ThreadLocal<Map<String, Object>> context =
-            ThreadLocal.withInitial(HashMap::new);
+    private Map<String, Object> data = new HashMap<>();
 
-    public static void set(String key, Object value) {
-        context.get().put(key, value);
+    public void set(String key, Object value) {
+        data.put(key, value);
     }
 
-    public static Object get(String key) {
-        return context.get().get(key);
-    }
-
-    public static void clear() {
-        context.get().clear();
+    public Object get(String key) {
+        return data.get(key);
     }
 }
