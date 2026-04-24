@@ -71,3 +71,96 @@ public class BookStore {
     public void validISBN() {
         fetchISBNs();
     }
+
+    @Given("ISBN {string} is prepared")
+    public void isbnPrepared(String isbnParam) {
+        isbn = isbnParam;
+    }
+
+    @When("I send a GET request to fetch book by ISBN")
+    public void getBookByIsbn() {
+        String query = (isbn == null || isbn.isEmpty()) ? "" : "?ISBN=" + isbn;
+        Account.response = given().when().get("/BookStore/v1/Book" + query);
+    }
+
+   
+
+    @Given("valid token and ISBN {string} are available")
+    public void validTokenAndSpecificIsbn(String isbnParam) {
+        setupUserAndToken();
+        isbn = isbnParam;
+    }
+
+    @When("I send a POST request to add a book")
+    public void addBook() {
+
+        String userId = (String) Hooks.sc.get("userId");
+        String token  = (String) Hooks.sc.get("token");
+
+        String body = "{ \"userId\": \"" + userId
+                + "\", \"collectionOfIsbns\": [{ \"isbn\": \"" + isbn + "\" }] }";
+
+        Account.response = given()
+                .contentType(ContentType.JSON)
+                .header("Authorization", "Bearer " + token)
+                .body(body)
+                .when().post("/BookStore/v1/Books");
+    }
+
+    @When("I send a POST request to add multiple books")
+    public void addMultipleBooks() {
+        String body = "{ \"userId\": \"" + Account.userId
+                + "\", \"collectionOfIsbns\": [{ \"isbn\": \"" + isbn
+                + "\" }, { \"isbn\": \"" + secondIsbn + "\" }] }";
+        Account.response = given().contentType(ContentType.JSON)
+                .header("Authorization", "Bearer " + Account.token)
+                .body(body).when().post("/BookStore/v1/Books");
+    }
+
+
+    @Given("valid token userId and same ISBN are available")
+    public void sameIsbnSetup() {
+        setupUserAndToken();
+        fetchISBNs();
+        addBookToUser(isbn);
+        replaceIsbn = isbn; 
+    }
+
+    @Given("valid token userId and ISBN {string} are available for update")
+    public void specificIsbnForUpdate(String isbnParam) {
+        setupUserAndToken();
+        fetchISBNs();
+        addBookToUser(isbn);
+        replaceIsbn = isbnParam;     }
+
+    @Given("token {string} and valid userId and ISBN are available")
+    public void specificTokenForReplace(String tokenParam) {
+        setupUserAndToken();
+        fetchISBNs();
+        addBookToUser(isbn);
+        Account.token = tokenParam; 
+    }
+
+    @Given("valid token userId and ISBN are available")
+    public void validTokenUserIdAndIsbn() {
+        if (Account.userId == null) setupUserAndToken();
+        fetchISBNs();
+        addBookToUser(isbn);
+        replaceIsbn = secondIsbn;
+    }
+
+    @When("I send a PUT request to replace book")
+    public void replaceBook() {
+        
+        if (Account.userId != null && Account.token != null) {
+            addBookToUser(isbn);
+        }
+        String useReplace = (replaceIsbn != null) ? replaceIsbn : secondIsbn;
+        String body = "{ \"userId\": \"" + Account.userId
+                + "\", \"isbn\": \"" + useReplace + "\" }";
+        Account.response = given().contentType(ContentType.JSON)
+                .header("Authorization",
+                        (Account.token == null || Account.token.isEmpty())
+                                ? "" : "Bearer " + Account.token)
+                .body(body).when().put("/BookStore/v1/Books/" + isbn);
+    }
