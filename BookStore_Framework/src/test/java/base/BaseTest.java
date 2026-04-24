@@ -1,7 +1,7 @@
 package base;
 
-import config.ConfigReader;
 import io.restassured.RestAssured;
+import config.ConfigReader;
 
 public class BaseTest {
 
