@@ -8,7 +8,7 @@ import static io.restassured.RestAssured.given;
 
 import config.ConfigReader;
 
-public class AccountSteps {
+public class Account {
 
     static Response response;
     static String username;
