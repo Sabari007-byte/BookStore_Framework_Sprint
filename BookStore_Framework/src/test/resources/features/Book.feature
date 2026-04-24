@@ -1,4 +1,4 @@
-#Author : Ganesh , Joseph
+#Author : Ganesh , Joseph , Sabarinathan
 #Created On : 24-04-2026
 #Module : Book
 
@@ -117,3 +117,39 @@ Feature: BookStore Book API Tests
     Then the response status should be 200
     And the response JSON should contain field "userId"
    
+
+  @BookStoreWebAPI01TC_30 @Invalid
+  Scenario Outline: Delete book with invalid ISBN
+    Given valid token userId and ISBN "<isbn>" are available for delete
+    When I send a DELETE request to remove book
+    Then the response status should be <expectedStatus>
+
+    Examples:
+      | isbn  | expectedStatus |
+      | 12345 | 400            |
+      |       | 400            |
+
+  @BookStoreWebAPI01TC_31 @Invalid
+  Scenario: Delete book second time
+    Given valid token userId and ISBN are available
+    When I send a DELETE request to remove book
+    And I send a DELETE request to remove book again
+    Then the response status should be 404
+
+  @BookStoreWebAPI01TC_32 @Invalid
+  Scenario Outline: Delete all books with invalid conditions
+    Given userId "<userId>" and token "<token>" conditions
+    When I send a DELETE request to remove all books
+    Then the response status should be <expectedStatus>
+
+    Examples:
+      | userId                               | token | expectedStatus |
+      | 96b6339e-2ec8-4d64-9b2d-bd99ae62ed8b |       | 401            |
+      | invalid_user_id                      |       | 401            |
+
+  @BookStoreWebAPI01TC_33 @Valid
+  Scenario: Delete all books with valid token
+    Given valid user data is loaded from CSV file
+    And user is created and token is generated from CSV
+    When I send a DELETE request to remove all books
+    Then the response status should be 204
