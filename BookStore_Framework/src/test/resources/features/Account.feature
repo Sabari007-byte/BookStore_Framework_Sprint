@@ -1,5 +1,5 @@
 #Author: ARISH ,VEERESHWAR
-#Created On: 21-04-2026
+#Created On: 24-04-2026
 #Module: Account
 
 Feature: BookStore Account API Tests
@@ -116,5 +116,15 @@ Feature: BookStore Account API Tests
     When I send a DELETE request to delete user
     Then the response status should be 204
 
-  
+  @BookStoreWebAPI01TC_16 @Invalid
+  Scenario: Delete user with invalid UUID
+    Given invalid user ID is prepared
+    When I send a DELETE request to delete user
+    Then the response status should be 404
+
+  @BookStoreWebAPI01TC_17 @Invalid
+  Scenario: Delete user without token
+    Given no token is provided
+    When I send a DELETE request to delete user
+    Then the response status should be 401
 
