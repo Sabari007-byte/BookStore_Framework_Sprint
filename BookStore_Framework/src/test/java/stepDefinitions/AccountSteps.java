@@ -10,12 +10,12 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
-import config.ConfigReader;
+import utils.ConfigReader;
 import utils.ExcelReader;
 import utils.ResponseValidator;
+import utils.ScenarioContext;
 
-
-public class AccountSteps {
+public class Account {
 
     public static Response response;
     public static String   userId;
