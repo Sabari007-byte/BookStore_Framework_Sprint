@@ -41,6 +41,8 @@ public class BookStore {
             String t = r.jsonPath().getString("token");
             if (t != null && !t.isEmpty()) Account.token = t;
         }
+        Hooks.sc.set("userId",Account.userId);
+        Hooks.sc.set("token", Account.token);
     }
 
     private void addBookToUser(String isbnToAdd) {
@@ -62,7 +64,8 @@ public class BookStore {
    
     @When("I send a GET request to fetch all books")
     public void getAllBooks() {
-        Account.response = given().when().get(ConfigReader.get("getBooks"));
+    	 Account.response = given().when().get(ConfigReader.get("getBooks"));
+
     }
 
     @Given("valid ISBN is available")
@@ -91,10 +94,16 @@ public class BookStore {
 
     @When("I send a POST request to add a book")
     public void addBook() {
-        String body = "{ \"userId\": \"" + Account.userId
+
+        String userId = (String) Hooks.sc.get("userId");
+        String token  = (String) Hooks.sc.get("token");
+
+        String body = "{ \"userId\": \"" + userId
                 + "\", \"collectionOfIsbns\": [{ \"isbn\": \"" + isbn + "\" }] }";
-        Account.response = given().contentType(ContentType.JSON)
-                .header("Authorization", "Bearer " + Account.token)
+
+        Account.response = given()
+                .contentType(ContentType.JSON)
+                .header("Authorization", "Bearer " + token)
                 .body(body).when().post(ConfigReader.get("addBook"));
     }
 
@@ -106,6 +115,7 @@ public class BookStore {
         Account.response = given().contentType(ContentType.JSON)
                 .header("Authorization", "Bearer " + Account.token)
                 .body(body).when().post(ConfigReader.get("addBook"));
+
     }
 
 
@@ -173,6 +183,7 @@ public class BookStore {
                         (Account.token == null || Account.token.isEmpty())
                                 ? "" : "Bearer " + Account.token)
                 .body(body).when().delete(ConfigReader.get("deleteBook"));
+
     }
 
     @When("I send a DELETE request to remove book again")
@@ -202,6 +213,7 @@ public class BookStore {
                         (Account.token == null || Account.token.isEmpty())
                                 ? "" : "Bearer " + Account.token)
                 .when().delete(ConfigReader.get("deleteAllBooks") + "?UserId=" + Account.userId);
+
     }
 
    
