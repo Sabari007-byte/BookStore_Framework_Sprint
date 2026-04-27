@@ -2,13 +2,13 @@ package stepDefinitions;
 
 import static io.restassured.RestAssured.given;
 
+import config.ConfigReader;
 import hooks.Hooks;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
-import config.ConfigReader;
 import utils.ResponseValidator;
 
 public class BookStore {
@@ -41,8 +41,6 @@ public class BookStore {
             String t = r.jsonPath().getString("token");
             if (t != null && !t.isEmpty()) Account.token = t;
         }
-        Hooks.sc.set("userId",Account.userId);
-        Hooks.sc.set("token", Account.token);
     }
 
     private void addBookToUser(String isbnToAdd) {
@@ -64,7 +62,7 @@ public class BookStore {
    
     @When("I send a GET request to fetch all books")
     public void getAllBooks() {
-        Account.response = given().when().get("/BookStore/v1/Books");
+        Account.response = given().when().get(ConfigReader.get("getBooks"));
     }
 
     @Given("valid ISBN is available")
@@ -80,7 +78,7 @@ public class BookStore {
     @When("I send a GET request to fetch book by ISBN")
     public void getBookByIsbn() {
         String query = (isbn == null || isbn.isEmpty()) ? "" : "?ISBN=" + isbn;
-        Account.response = given().when().get("/BookStore/v1/Book" + query);
+        Account.response = given().when().get(ConfigReader.get("getBook") + query);
     }
 
    
@@ -93,18 +91,11 @@ public class BookStore {
 
     @When("I send a POST request to add a book")
     public void addBook() {
-
-        String userId = (String) Hooks.sc.get("userId");
-        String token  = (String) Hooks.sc.get("token");
-
-        String body = "{ \"userId\": \"" + userId
+        String body = "{ \"userId\": \"" + Account.userId
                 + "\", \"collectionOfIsbns\": [{ \"isbn\": \"" + isbn + "\" }] }";
-
-        Account.response = given()
-                .contentType(ContentType.JSON)
-                .header("Authorization", "Bearer " + token)
-                .body(body)
-                .when().post("/BookStore/v1/Books");
+        Account.response = given().contentType(ContentType.JSON)
+                .header("Authorization", "Bearer " + Account.token)
+                .body(body).when().post(ConfigReader.get("addBook"));
     }
 
     @When("I send a POST request to add multiple books")
@@ -114,7 +105,7 @@ public class BookStore {
                 + "\" }, { \"isbn\": \"" + secondIsbn + "\" }] }";
         Account.response = given().contentType(ContentType.JSON)
                 .header("Authorization", "Bearer " + Account.token)
-                .body(body).when().post("/BookStore/v1/Books");
+                .body(body).when().post(ConfigReader.get("addBook"));
     }
 
 
@@ -162,7 +153,7 @@ public class BookStore {
                 .header("Authorization",
                         (Account.token == null || Account.token.isEmpty())
                                 ? "" : "Bearer " + Account.token)
-                .body(body).when().put("/BookStore/v1/Books/" + isbn);
+                .body(body).when().put(ConfigReader.get("updateBook") + isbn);
     }
 
    
@@ -181,7 +172,7 @@ public class BookStore {
                 .header("Authorization",
                         (Account.token == null || Account.token.isEmpty())
                                 ? "" : "Bearer " + Account.token)
-                .body(body).when().delete("/BookStore/v1/Book");
+                .body(body).when().delete(ConfigReader.get("deleteBook"));
     }
 
     @When("I send a DELETE request to remove book again")
@@ -193,7 +184,7 @@ public class BookStore {
     public void verifyUserExists() {
         Account.response = given()
                 .header("Authorization", "Bearer " + Account.token)
-                .when().get("/Account/v1/User/" + Account.userId);
+                .when().get(ConfigReader.get("getUser") + Account.userId);
     }
 
   
@@ -210,7 +201,7 @@ public class BookStore {
                 .header("Authorization",
                         (Account.token == null || Account.token.isEmpty())
                                 ? "" : "Bearer " + Account.token)
-                .when().delete("/BookStore/v1/Books?UserId=" + Account.userId);
+                .when().delete(ConfigReader.get("deleteAllBooks") + "?UserId=" + Account.userId);
     }
 
    
