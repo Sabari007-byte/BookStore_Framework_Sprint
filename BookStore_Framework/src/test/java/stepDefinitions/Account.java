@@ -15,7 +15,7 @@ import utils.ExcelReader;
 import utils.ResponseValidator;
 
 
-public class AccountSteps {
+public class Account {
 
     public static Response response;
     public static String   userId;
