@@ -13,6 +13,9 @@ public class Hooks {
 
     public static int     actualStatusCode    = -1;
     public static boolean forceFailWithDefect = false;
+    public static String sharedUserId;
+    public static String sharedToken;
+    public static String sharedUsername;
     public static String  defectMessage       = "";
     public static String  currentTcTag        = "";   
     public static int rowIndex = 0;

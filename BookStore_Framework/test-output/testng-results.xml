@@ -2,26 +2,26 @@
 <testng-results ignored="0" total="43" passed="31" failed="12" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-04-27T13:30:41 IST" name="Default suite" finished-at="2026-04-27T13:34:58 IST" duration-ms="256223">
+  <suite started-at="2026-04-27T14:14:06 IST" name="Default suite" finished-at="2026-04-27T14:18:11 IST" duration-ms="245442">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@5aa9e4eb]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@4c402120]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2026-04-27T13:30:41 IST" name="Default test" finished-at="2026-04-27T13:34:58 IST" duration-ms="256223">
+    <test started-at="2026-04-27T14:14:06 IST" name="Default test" finished-at="2026-04-27T14:18:11 IST" duration-ms="245442">
       <class name="runners.TestRunner">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runners.TestRunner@5aa9e4eb]" started-at="2026-04-27T13:30:41 IST" name="setUpClass" finished-at="2026-04-27T13:30:44 IST" duration-ms="2163" status="PASS">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runners.TestRunner@4c402120]" started-at="2026-04-27T14:14:06 IST" name="setUpClass" finished-at="2026-04-27T14:14:06 IST" duration-ms="631" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@54a332e4]]>
+                <![CDATA[org.testng.TestRunner@7fd7965b]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@5aa9e4eb]" started-at="2026-04-27T13:30:44 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-27T13:30:52 IST" duration-ms="8507" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@4c402120]" started-at="2026-04-27T14:14:06 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-27T14:14:09 IST" duration-ms="2834" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -37,7 +37,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@5aa9e4eb]" started-at="2026-04-27T13:30:52 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-27T13:30:54 IST" duration-ms="1879" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@4c402120]" started-at="2026-04-27T14:14:09 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-27T14:14:11 IST" duration-ms="2046" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -53,7 +53,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@5aa9e4eb]" started-at="2026-04-27T13:30:54 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-27T13:30:55 IST" duration-ms="567" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@4c402120]" started-at="2026-04-27T14:14:11 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-27T14:14:12 IST" duration-ms="529" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -69,7 +69,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@5aa9e4eb]" started-at="2026-04-27T13:30:55 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-27T13:30:56 IST" duration-ms="1038" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@4c402120]" started-at="2026-04-27T14:14:12 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-27T14:14:13 IST" duration-ms="958" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -92,9 +92,11 @@ Expected status code <400> but was <406>.
               <![CDATA[java.lang.AssertionError: 1 expectation failed.
 Expected status code <400> but was <406>.
 
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
 at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
 at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
 at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:57)
@@ -104,8 +106,10 @@ at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.va
 at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
 at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696)
 at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
 at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
 at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
 at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
@@ -114,15 +118,15 @@ at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecific
 at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
 at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143)
 at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
-at stepDefinitions.Account.validateStatus(Account.java:315)
-at ✽.the response status should be 400(file:///C:/Users/sabar/git/BookStore_Framework_Sprint_/BookStore_Framework/src/test/resources/features/Account.feature:29)
+at stepDefinitions.Account.validateStatus(Account.java:334)
+at ✽.the response status should be 400(file:///C:/Users/Raman/git/repository4/BookStore_Framework_Sprint/BookStore_Framework/src/test/resources/features/Account.feature:29)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@5aa9e4eb]" started-at="2026-04-27T13:30:56 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-27T13:30:56 IST" duration-ms="635" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@4c402120]" started-at="2026-04-27T14:14:13 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-27T14:14:13 IST" duration-ms="616" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -138,7 +142,7 @@ at ✽.the response status should be 400(file:///C:/Users/sabar/git/BookStore_Fr
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@5aa9e4eb]" started-at="2026-04-27T13:30:56 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-27T13:30:57 IST" duration-ms="545" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@4c402120]" started-at="2026-04-27T14:14:13 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-27T14:14:14 IST" duration-ms="522" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -154,7 +158,7 @@ at ✽.the response status should be 400(file:///C:/Users/sabar/git/BookStore_Fr
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@5aa9e4eb]" started-at="2026-04-27T13:30:57 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-27T13:31:00 IST" duration-ms="3148" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@4c402120]" started-at="2026-04-27T14:14:14 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-27T14:14:16 IST" duration-ms="2395" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -170,7 +174,7 @@ at ✽.the response status should be 400(file:///C:/Users/sabar/git/BookStore_Fr
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@5aa9e4eb]" started-at="2026-04-27T13:31:00 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-27T13:31:03 IST" duration-ms="3173" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@4c402120]" started-at="2026-04-27T14:14:16 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-27T14:14:18 IST" duration-ms="1742" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -193,9 +197,11 @@ Expected status code <401> but was <200>.
               <![CDATA[java.lang.AssertionError: 1 expectation failed.
 Expected status code <401> but was <200>.
 
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
 at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
 at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
 at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
@@ -203,8 +209,10 @@ at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.va
 at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
 at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696)
 at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
 at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
 at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
 at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
@@ -213,15 +221,15 @@ at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecific
 at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
 at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143)
 at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
-at stepDefinitions.Account.validateStatus(Account.java:315)
-at ✽.the response status should be 401(file:///C:/Users/sabar/git/BookStore_Framework_Sprint_/BookStore_Framework/src/test/resources/features/Account.feature:61)
+at stepDefinitions.Account.validateStatus(Account.java:334)
+at ✽.the response status should be 401(file:///C:/Users/Raman/git/repository4/BookStore_Framework_Sprint/BookStore_Framework/src/test/resources/features/Account.feature:61)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@5aa9e4eb]" started-at="2026-04-27T13:31:03 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-27T13:31:06 IST" duration-ms="2725" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@4c402120]" started-at="2026-04-27T14:14:18 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-27T14:14:19 IST" duration-ms="1309" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -244,9 +252,11 @@ Expected status code <401> but was <200>.
               <![CDATA[java.lang.AssertionError: 1 expectation failed.
 Expected status code <401> but was <200>.
 
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
 at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
 at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
 at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
@@ -254,8 +264,10 @@ at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.va
 at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
 at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696)
 at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
 at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
 at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
 at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
@@ -264,15 +276,15 @@ at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecific
 at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
 at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143)
 at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
-at stepDefinitions.Account.validateStatus(Account.java:315)
-at ✽.the response status should be 401(file:///C:/Users/sabar/git/BookStore_Framework_Sprint_/BookStore_Framework/src/test/resources/features/Account.feature:61)
+at stepDefinitions.Account.validateStatus(Account.java:334)
+at ✽.the response status should be 401(file:///C:/Users/Raman/git/repository4/BookStore_Framework_Sprint/BookStore_Framework/src/test/resources/features/Account.feature:61)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@5aa9e4eb]" started-at="2026-04-27T13:31:06 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-27T13:31:09 IST" duration-ms="2687" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@4c402120]" started-at="2026-04-27T14:14:19 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-27T14:14:21 IST" duration-ms="1657" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -295,9 +307,11 @@ Expected status code <400> but was <200>.
               <![CDATA[java.lang.AssertionError: 1 expectation failed.
 Expected status code <400> but was <200>.
 
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
 at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
 at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
 at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
@@ -305,8 +319,10 @@ at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.va
 at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
 at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696)
 at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
 at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
 at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
 at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
@@ -315,15 +331,15 @@ at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecific
 at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
 at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143)
 at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
-at stepDefinitions.Account.validateStatus(Account.java:315)
-at ✽.the response status should be 400(file:///C:/Users/sabar/git/BookStore_Framework_Sprint_/BookStore_Framework/src/test/resources/features/Account.feature:61)
+at stepDefinitions.Account.validateStatus(Account.java:334)
+at ✽.the response status should be 400(file:///C:/Users/Raman/git/repository4/BookStore_Framework_Sprint/BookStore_Framework/src/test/resources/features/Account.feature:61)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@5aa9e4eb]" started-at="2026-04-27T13:31:09 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-27T13:31:11 IST" duration-ms="2169" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@4c402120]" started-at="2026-04-27T14:14:21 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-27T14:14:22 IST" duration-ms="1274" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -346,9 +362,11 @@ Expected status code <400> but was <200>.
               <![CDATA[java.lang.AssertionError: 1 expectation failed.
 Expected status code <400> but was <200>.
 
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
 at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
 at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
 at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
@@ -356,8 +374,10 @@ at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.va
 at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
 at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696)
 at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
 at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
 at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
 at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
@@ -366,15 +386,15 @@ at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecific
 at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
 at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143)
 at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
-at stepDefinitions.Account.validateStatus(Account.java:315)
-at ✽.the response status should be 400(file:///C:/Users/sabar/git/BookStore_Framework_Sprint_/BookStore_Framework/src/test/resources/features/Account.feature:73)
+at stepDefinitions.Account.validateStatus(Account.java:334)
+at ✽.the response status should be 400(file:///C:/Users/Raman/git/repository4/BookStore_Framework_Sprint/BookStore_Framework/src/test/resources/features/Account.feature:73)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@5aa9e4eb]" started-at="2026-04-27T13:31:11 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-27T13:31:14 IST" duration-ms="3041" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@4c402120]" started-at="2026-04-27T14:14:22 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-27T14:14:28 IST" duration-ms="5635" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -390,7 +410,7 @@ at ✽.the response status should be 400(file:///C:/Users/sabar/git/BookStore_Fr
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@5aa9e4eb]" started-at="2026-04-27T13:31:14 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-27T13:31:14 IST" duration-ms="588" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@4c402120]" started-at="2026-04-27T14:14:28 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-27T14:14:28 IST" duration-ms="586" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -413,9 +433,11 @@ Expected status code <401> but was <200>.
               <![CDATA[java.lang.AssertionError: 1 expectation failed.
 Expected status code <401> but was <200>.
 
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
 at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
 at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
 at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
@@ -423,8 +445,10 @@ at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.va
 at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
 at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696)
 at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
 at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
 at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
 at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
@@ -433,15 +457,15 @@ at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecific
 at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
 at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143)
 at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
-at stepDefinitions.Account.validateStatus(Account.java:315)
-at ✽.the response status should be 401(file:///C:/Users/sabar/git/BookStore_Framework_Sprint_/BookStore_Framework/src/test/resources/features/Account.feature:86)
+at stepDefinitions.Account.validateStatus(Account.java:334)
+at ✽.the response status should be 401(file:///C:/Users/Raman/git/repository4/BookStore_Framework_Sprint/BookStore_Framework/src/test/resources/features/Account.feature:86)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@5aa9e4eb]" started-at="2026-04-27T13:31:14 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-27T13:31:15 IST" duration-ms="720" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@4c402120]" started-at="2026-04-27T14:14:28 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-27T14:14:29 IST" duration-ms="556" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -464,9 +488,11 @@ Expected status code <401> but was <200>.
               <![CDATA[java.lang.AssertionError: 1 expectation failed.
 Expected status code <401> but was <200>.
 
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
 at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
 at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
 at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
@@ -474,8 +500,10 @@ at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.va
 at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
 at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696)
 at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
 at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
 at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
 at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
@@ -484,15 +512,15 @@ at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecific
 at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
 at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143)
 at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
-at stepDefinitions.Account.validateStatus(Account.java:315)
-at ✽.the response status should be 401(file:///C:/Users/sabar/git/BookStore_Framework_Sprint_/BookStore_Framework/src/test/resources/features/Account.feature:86)
+at stepDefinitions.Account.validateStatus(Account.java:334)
+at ✽.the response status should be 401(file:///C:/Users/Raman/git/repository4/BookStore_Framework_Sprint/BookStore_Framework/src/test/resources/features/Account.feature:86)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@5aa9e4eb]" started-at="2026-04-27T13:31:15 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-27T13:31:18 IST" duration-ms="3254" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@4c402120]" started-at="2026-04-27T14:14:29 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-27T14:14:32 IST" duration-ms="2858" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -508,7 +536,7 @@ at ✽.the response status should be 401(file:///C:/Users/sabar/git/BookStore_Fr
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@5aa9e4eb]" started-at="2026-04-27T13:31:18 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-27T13:31:21 IST" duration-ms="2905" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@4c402120]" started-at="2026-04-27T14:14:32 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-27T14:14:35 IST" duration-ms="3653" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -531,9 +559,11 @@ Expected status code <404> but was <401>.
               <![CDATA[java.lang.AssertionError: 1 expectation failed.
 Expected status code <404> but was <401>.
 
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
 at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
 at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
 at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
@@ -541,8 +571,10 @@ at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.va
 at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
 at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696)
 at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
 at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
 at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
 at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
@@ -551,15 +583,15 @@ at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecific
 at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
 at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143)
 at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
-at stepDefinitions.Account.validateStatus(Account.java:315)
-at ✽.the response status should be 404(file:///C:/Users/sabar/git/BookStore_Framework_Sprint_/BookStore_Framework/src/test/resources/features/Account.feature:105)
+at stepDefinitions.Account.validateStatus(Account.java:334)
+at ✽.the response status should be 404(file:///C:/Users/Raman/git/repository4/BookStore_Framework_Sprint/BookStore_Framework/src/test/resources/features/Account.feature:103)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@5aa9e4eb]" started-at="2026-04-27T13:31:21 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-27T13:31:24 IST" duration-ms="3139" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@4c402120]" started-at="2026-04-27T14:14:35 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-27T14:14:39 IST" duration-ms="3044" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -582,9 +614,11 @@ Expected status code <404> but was <401>.
               <![CDATA[java.lang.AssertionError: 1 expectation failed.
 Expected status code <404> but was <401>.
 
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
 at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
 at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
 at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
@@ -592,8 +626,9 @@ at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.va
 at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
 at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696)
 at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at jdk.internal.reflect.GeneratedMethodAccessor240.invoke(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
 at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
 at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
 at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
@@ -602,15 +637,15 @@ at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecific
 at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
 at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143)
 at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
-at stepDefinitions.Account.validateStatus(Account.java:315)
-at ✽.the response status should be 404(file:///C:/Users/sabar/git/BookStore_Framework_Sprint_/BookStore_Framework/src/test/resources/features/Account.feature:105)
+at stepDefinitions.Account.validateStatus(Account.java:334)
+at ✽.the response status should be 404(file:///C:/Users/Raman/git/repository4/BookStore_Framework_Sprint/BookStore_Framework/src/test/resources/features/Account.feature:103)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@5aa9e4eb]" started-at="2026-04-27T13:31:24 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-27T13:31:29 IST" duration-ms="5049" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@4c402120]" started-at="2026-04-27T14:14:39 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-27T14:14:39 IST" duration-ms="907" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -626,7 +661,7 @@ at ✽.the response status should be 404(file:///C:/Users/sabar/git/BookStore_Fr
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@5aa9e4eb]" started-at="2026-04-27T13:31:29 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-27T13:31:34 IST" duration-ms="4122" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@4c402120]" started-at="2026-04-27T14:14:39 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-27T14:14:43 IST" duration-ms="3706" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -649,9 +684,11 @@ Expected status code <404> but was <200>.
               <![CDATA[java.lang.AssertionError: 1 expectation failed.
 Expected status code <404> but was <200>.
 
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
 at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
 at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
 at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
@@ -659,8 +696,9 @@ at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.va
 at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
 at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696)
 at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at jdk.internal.reflect.GeneratedMethodAccessor240.invoke(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
 at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
 at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
 at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
@@ -669,15 +707,15 @@ at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecific
 at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
 at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143)
 at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
-at stepDefinitions.Account.validateStatus(Account.java:315)
-at ✽.the response status should be 404(file:///C:/Users/sabar/git/BookStore_Framework_Sprint_/BookStore_Framework/src/test/resources/features/Account.feature:123)
+at stepDefinitions.Account.validateStatus(Account.java:334)
+at ✽.the response status should be 404(file:///C:/Users/Raman/git/repository4/BookStore_Framework_Sprint/BookStore_Framework/src/test/resources/features/Account.feature:120)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@5aa9e4eb]" started-at="2026-04-27T13:31:34 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-27T13:31:35 IST" duration-ms="1410" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@4c402120]" started-at="2026-04-27T14:14:43 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-27T14:14:45 IST" duration-ms="1609" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -693,7 +731,7 @@ at ✽.the response status should be 404(file:///C:/Users/sabar/git/BookStore_Fr
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@5aa9e4eb]" started-at="2026-04-27T13:31:35 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-27T13:31:36 IST" duration-ms="598" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@4c402120]" started-at="2026-04-27T14:14:45 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-27T14:14:45 IST" duration-ms="537" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -709,7 +747,7 @@ at ✽.the response status should be 404(file:///C:/Users/sabar/git/BookStore_Fr
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@5aa9e4eb]" started-at="2026-04-27T13:31:36 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-27T13:31:37 IST" duration-ms="1369" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@4c402120]" started-at="2026-04-27T14:14:45 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-27T14:14:46 IST" duration-ms="1109" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -725,7 +763,7 @@ at ✽.the response status should be 404(file:///C:/Users/sabar/git/BookStore_Fr
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@5aa9e4eb]" started-at="2026-04-27T13:31:37 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-27T13:31:37 IST" duration-ms="515" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@4c402120]" started-at="2026-04-27T14:14:46 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-27T14:14:47 IST" duration-ms="503" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -741,7 +779,7 @@ at ✽.the response status should be 404(file:///C:/Users/sabar/git/BookStore_Fr
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@5aa9e4eb]" started-at="2026-04-27T13:31:37 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-27T13:33:38 IST" duration-ms="120531" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@4c402120]" started-at="2026-04-27T14:14:47 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-27T14:16:47 IST" duration-ms="120487" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -757,7 +795,7 @@ at ✽.the response status should be 404(file:///C:/Users/sabar/git/BookStore_Fr
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@5aa9e4eb]" started-at="2026-04-27T13:33:38 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-27T13:33:39 IST" duration-ms="535" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@4c402120]" started-at="2026-04-27T14:16:47 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-27T14:16:48 IST" duration-ms="543" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -773,7 +811,7 @@ at ✽.the response status should be 404(file:///C:/Users/sabar/git/BookStore_Fr
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@5aa9e4eb]" started-at="2026-04-27T13:33:39 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-27T13:33:43 IST" duration-ms="4440" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@4c402120]" started-at="2026-04-27T14:16:48 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-27T14:16:52 IST" duration-ms="3943" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -789,7 +827,7 @@ at ✽.the response status should be 404(file:///C:/Users/sabar/git/BookStore_Fr
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@5aa9e4eb]" started-at="2026-04-27T13:33:43 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-27T13:33:48 IST" duration-ms="5095" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@4c402120]" started-at="2026-04-27T14:16:52 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-27T14:16:57 IST" duration-ms="4886" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -805,7 +843,7 @@ at ✽.the response status should be 404(file:///C:/Users/sabar/git/BookStore_Fr
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@5aa9e4eb]" started-at="2026-04-27T13:33:48 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-27T13:33:52 IST" duration-ms="4033" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@4c402120]" started-at="2026-04-27T14:16:57 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-27T14:17:01 IST" duration-ms="4099" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -821,7 +859,7 @@ at ✽.the response status should be 404(file:///C:/Users/sabar/git/BookStore_Fr
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@5aa9e4eb]" started-at="2026-04-27T13:33:52 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-27T13:33:57 IST" duration-ms="4433" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@4c402120]" started-at="2026-04-27T14:17:01 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-27T14:17:05 IST" duration-ms="4326" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -837,7 +875,7 @@ at ✽.the response status should be 404(file:///C:/Users/sabar/git/BookStore_Fr
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@5aa9e4eb]" started-at="2026-04-27T13:33:57 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-27T13:34:02 IST" duration-ms="5239" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@4c402120]" started-at="2026-04-27T14:17:05 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-27T14:17:10 IST" duration-ms="4537" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -853,7 +891,7 @@ at ✽.the response status should be 404(file:///C:/Users/sabar/git/BookStore_Fr
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@5aa9e4eb]" started-at="2026-04-27T13:34:02 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-27T13:34:08 IST" duration-ms="6152" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@4c402120]" started-at="2026-04-27T14:17:10 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-27T14:17:16 IST" duration-ms="6760" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -876,9 +914,11 @@ Expected status code <409> but was <400>.
               <![CDATA[java.lang.AssertionError: 1 expectation failed.
 Expected status code <409> but was <400>.
 
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
 at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
 at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
 at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
@@ -886,8 +926,9 @@ at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.va
 at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
 at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696)
 at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at jdk.internal.reflect.GeneratedMethodAccessor240.invoke(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
 at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
 at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
 at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
@@ -896,15 +937,15 @@ at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecific
 at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
 at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143)
 at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
-at stepDefinitions.Account.validateStatus(Account.java:315)
-at ✽.the response status should be 409(file:///C:/Users/sabar/git/BookStore_Framework_Sprint_/BookStore_Framework/src/test/resources/features/Book.feature:78)
+at stepDefinitions.Account.validateStatus(Account.java:334)
+at ✽.the response status should be 409(file:///C:/Users/Raman/git/repository4/BookStore_Framework_Sprint/BookStore_Framework/src/test/resources/features/Book.feature:78)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@5aa9e4eb]" started-at="2026-04-27T13:34:08 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-27T13:34:13 IST" duration-ms="4881" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@4c402120]" started-at="2026-04-27T14:17:16 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-27T14:17:23 IST" duration-ms="6313" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -920,7 +961,7 @@ at ✽.the response status should be 409(file:///C:/Users/sabar/git/BookStore_Fr
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@5aa9e4eb]" started-at="2026-04-27T13:34:13 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-27T13:34:18 IST" duration-ms="5053" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@4c402120]" started-at="2026-04-27T14:17:23 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-27T14:17:30 IST" duration-ms="6760" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -936,7 +977,7 @@ at ✽.the response status should be 409(file:///C:/Users/sabar/git/BookStore_Fr
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@5aa9e4eb]" started-at="2026-04-27T13:34:18 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-27T13:34:23 IST" duration-ms="4844" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@4c402120]" started-at="2026-04-27T14:17:30 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-27T14:17:34 IST" duration-ms="4565" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -952,7 +993,7 @@ at ✽.the response status should be 409(file:///C:/Users/sabar/git/BookStore_Fr
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@5aa9e4eb]" started-at="2026-04-27T13:34:23 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-27T13:34:28 IST" duration-ms="5196" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@4c402120]" started-at="2026-04-27T14:17:34 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-27T14:17:40 IST" duration-ms="5569" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -968,7 +1009,7 @@ at ✽.the response status should be 409(file:///C:/Users/sabar/git/BookStore_Fr
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@5aa9e4eb]" started-at="2026-04-27T13:34:28 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-27T13:34:33 IST" duration-ms="4711" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@4c402120]" started-at="2026-04-27T14:17:40 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-27T14:17:44 IST" duration-ms="4409" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -984,7 +1025,7 @@ at ✽.the response status should be 409(file:///C:/Users/sabar/git/BookStore_Fr
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@5aa9e4eb]" started-at="2026-04-27T13:34:33 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-27T13:34:40 IST" duration-ms="6908" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@4c402120]" started-at="2026-04-27T14:17:44 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-27T14:17:48 IST" duration-ms="4364" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1000,7 +1041,7 @@ at ✽.the response status should be 409(file:///C:/Users/sabar/git/BookStore_Fr
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@5aa9e4eb]" started-at="2026-04-27T13:34:40 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-27T13:34:43 IST" duration-ms="3320" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@4c402120]" started-at="2026-04-27T14:17:48 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-27T14:17:52 IST" duration-ms="3559" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1016,7 +1057,7 @@ at ✽.the response status should be 409(file:///C:/Users/sabar/git/BookStore_Fr
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@5aa9e4eb]" started-at="2026-04-27T13:34:43 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-27T13:34:47 IST" duration-ms="4123" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@4c402120]" started-at="2026-04-27T14:17:52 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-27T14:17:57 IST" duration-ms="5314" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1032,7 +1073,7 @@ at ✽.the response status should be 409(file:///C:/Users/sabar/git/BookStore_Fr
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@5aa9e4eb]" started-at="2026-04-27T13:34:47 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-27T13:34:50 IST" duration-ms="2853" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@4c402120]" started-at="2026-04-27T14:17:57 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-27T14:18:01 IST" duration-ms="3696" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -1055,9 +1096,11 @@ Expected status code <404> but was <400>.
               <![CDATA[java.lang.AssertionError: 1 expectation failed.
 Expected status code <404> but was <400>.
 
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
 at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
 at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
 at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
@@ -1065,8 +1108,9 @@ at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.va
 at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
 at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696)
 at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at jdk.internal.reflect.GeneratedMethodAccessor240.invoke(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
 at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
 at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
 at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
@@ -1075,15 +1119,15 @@ at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecific
 at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
 at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143)
 at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
-at stepDefinitions.Account.validateStatus(Account.java:315)
-at ✽.the response status should be 404(file:///C:/Users/sabar/git/BookStore_Framework_Sprint_/BookStore_Framework/src/test/resources/features/Book.feature:137)
+at stepDefinitions.Account.validateStatus(Account.java:334)
+at ✽.the response status should be 404(file:///C:/Users/Raman/git/repository4/BookStore_Framework_Sprint/BookStore_Framework/src/test/resources/features/Book.feature:137)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@5aa9e4eb]" started-at="2026-04-27T13:34:50 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-27T13:34:50 IST" duration-ms="610" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@4c402120]" started-at="2026-04-27T14:18:01 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-27T14:18:03 IST" duration-ms="2204" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1099,7 +1143,7 @@ at ✽.the response status should be 404(file:///C:/Users/sabar/git/BookStore_Fr
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@5aa9e4eb]" started-at="2026-04-27T13:34:50 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-27T13:34:51 IST" duration-ms="504" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@4c402120]" started-at="2026-04-27T14:18:03 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-27T14:18:04 IST" duration-ms="506" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1115,7 +1159,7 @@ at ✽.the response status should be 404(file:///C:/Users/sabar/git/BookStore_Fr
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@5aa9e4eb]" started-at="2026-04-27T13:34:51 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-27T13:34:55 IST" duration-ms="4281" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@4c402120]" started-at="2026-04-27T14:18:04 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-27T14:18:09 IST" duration-ms="5117" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1131,7 +1175,7 @@ at ✽.the response status should be 404(file:///C:/Users/sabar/git/BookStore_Fr
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runners.TestRunner@5aa9e4eb]" started-at="2026-04-27T13:34:55 IST" name="tearDownClass" finished-at="2026-04-27T13:34:58 IST" duration-ms="2294" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runners.TestRunner@4c402120]" started-at="2026-04-27T14:18:09 IST" name="tearDownClass" finished-at="2026-04-27T14:18:11 IST" duration-ms="2167" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->

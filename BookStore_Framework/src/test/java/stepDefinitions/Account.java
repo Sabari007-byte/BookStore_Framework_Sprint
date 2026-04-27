@@ -13,7 +13,7 @@ import io.restassured.response.Response;
 import config.ConfigReader;
 import utils.ExcelReader;
 import utils.ResponseValidator;
-
+import context.ScenarioContext;
 
 public class Account {
 
@@ -144,7 +144,8 @@ public class Account {
             String uid = response.jsonPath().getString("userID");
             userId = uid;
             Hooks.sc.set("userId", uid);
-          
+            Hooks.sharedUserId = uid;
+            Hooks.sharedUsername = username;
          }
     }
 
@@ -152,15 +153,11 @@ public class Account {
     @Given("token request payload is prepared with {string} and {string}")
     public void tokenRequestPayloadPrepared(String usernameParam, String passwordParam) {
 
-        csvUsername = ExcelReader.getUsername(Hooks.rowIndex);
-        csvPassword = ExcelReader.getPassword(Hooks.rowIndex);
+         String u = Hooks.sharedUsername;
 
-        createFreshUser();
+       String p = (csvPassword != null) ? csvPassword : "Test@123";
 
-        String u = username;
-        String p = (csvPassword != null) ? csvPassword : "Test@123";
-
-        requestBody = buildBody(u, p);
+        requestBody = "{ \"userName\": \"" + u + "\", \"password\": \"" + p + "\" }";
     }
 
     @When("I send a POST request to generate token")
@@ -171,8 +168,9 @@ public class Account {
             String t = response.jsonPath().getString("token");
             token = t;
        Hooks.sc.set("token", t);
+       Hooks.sharedToken = t;
     }
-
+    
   
     @Given("token {string} is prepared for authorization")
     public void tokenForAuthorization(String tokenValue) {
@@ -213,7 +211,28 @@ public class Account {
         createFreshUser();
         token = "";
     }
+    @Given("previously created user is used")
+    public void usePreviousUser() {
 
+        userId = Hooks.sharedUserId;
+
+        if (Hooks.sharedToken == null || Hooks.sharedToken.isEmpty()) {
+
+            String body = "{ \"userName\": \"" + Hooks.sharedUsername + "\", \"password\": \"Test@123\" }";
+
+            Response r = given()
+                    .contentType(ContentType.JSON)
+                    .body(body)
+                    .post(ConfigReader.get("generateToken"));
+
+            Hooks.sharedToken = r.jsonPath().getString("token");
+        }
+
+        token = Hooks.sharedToken;
+
+        Hooks.sc.set("userId", userId);
+        Hooks.sc.set("token", token);
+    }
     @When("I send a GET request to fetch user")
     public void fetchUser() {
         response = given()

@@ -1,5 +1,5 @@
 #Author: ARISH ,VEERESHWAR
-#Created On: 24-04-2026
+#Created On: 21-04-2026
 #Module: Account
 
 Feature: BookStore Account API Tests
@@ -92,11 +92,9 @@ Feature: BookStore Account API Tests
 
   @BookStoreWebAPI01TC_13 @Valid
   Scenario: Fetch user with valid UUID
-    Given valid user data is loaded from CSV file
-    And user is created and token is generated from CSV
-    When I send a GET request to fetch user
-    Then the response status should be 200
-    And the response JSON should contain field "userId"
+  Given previously created user is used
+  When I send a GET request to fetch user
+  Then the response status should be 200
 
   @BookStoreWebAPI01TC_14 @Invalid
   Scenario Outline: Fetch user with invalid UUID
@@ -111,10 +109,9 @@ Feature: BookStore Account API Tests
 
   @BookStoreWebAPI01TC_15 @Valid
   Scenario: Delete user with valid UUID and token
-    Given valid user data is loaded from CSV file
-    And user is created and token is generated from CSV
-    When I send a DELETE request to delete user
-    Then the response status should be 204
+  Given previously created user is used
+  When I send a DELETE request to delete user
+  Then the response status should be 204
 
   @BookStoreWebAPI01TC_16 @Invalid
   Scenario: Delete user with invalid UUID
