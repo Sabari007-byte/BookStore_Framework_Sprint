@@ -13,7 +13,7 @@ import io.restassured.response.Response;
 import config.ConfigReader;
 import utils.ExcelReader;
 import utils.ResponseValidator;
-import context.ScenarioContext;
+
 
 public class Account {
 
@@ -56,17 +56,7 @@ public class Account {
         return "{ \"userName\": \"" + u + "\", \"password\": \"" + p + "\" }";
     }
 
-    private void markDefect(String tcId, String message) {
-        Hooks.forceFailWithDefect = true;
-        Hooks.defectMessage = "[DEFECT] " + tcId + ": " + message;
-        System.out.println(Hooks.defectMessage);
-    }
-
-  
-    @Given("The user API base URL is set")
-    public void setBaseURI() {
-        io.restassured.RestAssured.baseURI = ConfigReader.get("baseUrl");
-    }
+    
 
 
     @Given("valid user data is loaded from CSV file")
@@ -109,7 +99,11 @@ public class Account {
         username = u;
         requestBody = buildBody(u, p);
     }
-
+    @Given("payload is prepared with {string} and {string} and {string}")
+    public void extraJsonBody(String username, String password ,String mobile) {
+        
+        requestBody = "{ \"userName\": \"" + username + "\", \"password\": \"" + password + "\",\"mobile\":\""+mobile+"\" }";
+    }
     @Given("duplicate user payload is prepared")
     public void duplicateUserPayload() {
         
@@ -152,12 +146,10 @@ public class Account {
    
     @Given("token request payload is prepared with {string} and {string}")
     public void tokenRequestPayloadPrepared(String usernameParam, String passwordParam) {
-
-         String u = Hooks.sharedUsername;
-
-       String p = (csvPassword != null) ? csvPassword : "Test@123";
-
-        requestBody = "{ \"userName\": \"" + u + "\", \"password\": \"" + p + "\" }";
+        String u = "CSV".equals(usernameParam) ? Hooks.sharedUsername : usernameParam;
+        String p = "CSV".equals(passwordParam) ? 
+                   (csvPassword != null ? csvPassword : "Test@123") : passwordParam;
+        requestBody = buildBody(u, p);
     }
 
     @When("I send a POST request to generate token")
@@ -253,85 +245,8 @@ public class Account {
 
     @Then("the response status should be {int}")
     public void validateStatus(int expectedCode) {
-        Hooks.actualStatusCode = response.getStatusCode();
-        int actual = Hooks.actualStatusCode;
-
-        switch (Hooks.currentTcTag) {
-            case "BookStoreWebAPI01TC_03":
-                if (actual == 201) {
-                    markDefect("TC_03", "Expected 400 Bad Request for extra JSON field but API returned 201 Created. "
-                            + "API does not reject unknown fields in request body.");
-                    return;
-                }
-                break;
-            case "BookStoreWebAPI01TC_07":
-                if (actual == 200) {
-                    markDefect("TC_07", "Expected 401 Unauthorized for invalid username but API returned 200 OK. "
-                            + "Response body contains 'status: Failed' — HTTP status code is incorrect.");
-                    return;
-                }
-                break;
-            case "BookStoreWebAPI01TC_08":
-                if (actual == 200) {
-                    markDefect("TC_08", "Expected 401 Unauthorized for wrong password but API returned 200 OK. "
-                            + "Response body contains 'status: Failed' — HTTP status code is incorrect.");
-                    return;
-                }
-                break;
-            case "BookStoreWebAPI01TC_09":
-                if (actual == 200) {
-                    markDefect("TC_09", "Expected 400 Bad Request for extra field in token request but API returned 200 OK. "
-                            + "API ignores unknown fields and generates token anyway.");
-                    return;
-                }
-                break;
-            case "BookStoreWebAPI01TC_11":
-                if (actual == 200) {
-                    markDefect("TC_11", "Expected 401 Unauthorized for invalid Bearer token on /Authorized but API returned 200 OK. "
-                            + "API does not validate the Authorization header for this endpoint.");
-                    return;
-                }
-                break;
-            case "BookStoreWebAPI01TC_12":
-                if (actual == 200) {
-                    markDefect("TC_12", "Expected 401 Unauthorized for missing token on /Authorized but API returned 200 OK. "
-                            + "API ignores the Authorization header entirely for this endpoint.");
-                    return;
-                }
-                break;
-            case "BookStoreWebAPI01TC_14":
-                if (actual == 401) {
-                    markDefect("TC_14", "Expected 404 Not Found for invalid UUID on GET /User/{UUID} but API returned 401 Unauthorized. "
-                            + "API enforces ownership check before existence check.");
-                    return;
-                }
-                break;
-            case "BookStoreWebAPI01TC_16":
-                if (actual == 200) {
-                    markDefect("TC_16", "Expected 404 Not Found for invalid UUID on DELETE /User/{UUID} but API returned 200 OK. "
-                            + "API does not validate that the UUID belongs to the authenticated user.");
-                    return;
-                }
-                break;
-            case "BookStoreWebAPI01TC_25":
-                if (actual == 400) {
-                    markDefect("TC_25", "Expected 409 Conflict when replacing book with the same ISBN but API returned 400 Bad Request. "
-                            + "'ISBN supplied is not available in User's Collection' — wrong error code.");
-                    return;
-                }
-                break;
-            case "BookStoreWebAPI01TC_31":
-                if (actual == 400) {
-                    markDefect("TC_31", "Expected 404 Not Found when deleting an already-deleted book but API returned 400 Bad Request. "
-                            + "API should return 404 when the resource no longer exists.");
-                    return;
-                }
-                break;
-            default:
-                break;
-        }
-
-        response.then().statusCode(expectedCode);
+      Hooks.actualStatusCode=response.getStatusCode();
+      response.then().statusCode(expectedCode);
     }
 
     @Then("the JSON response status should be {int} within {long} ms")

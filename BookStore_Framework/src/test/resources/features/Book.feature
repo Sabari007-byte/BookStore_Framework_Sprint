@@ -4,9 +4,7 @@
 
 Feature: BookStore Book API Tests
 
-  Background:
-    Given The BookStore API base URL is set
-
+  
   @BookStoreWebAPI01TC_18 @Valid
   Scenario: Retrieve all books
     When I send a GET request to fetch all books

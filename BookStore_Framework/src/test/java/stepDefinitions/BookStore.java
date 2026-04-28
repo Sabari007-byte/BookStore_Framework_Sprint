@@ -15,7 +15,6 @@ public class BookStore {
 
     static String isbn;
     static String secondIsbn;
-    static final String invalidIsbn = "12345";
     static String replaceIsbn; 
 
     private void fetchISBNs() {
@@ -56,10 +55,6 @@ public class BookStore {
 
   
 
-    @Given("The BookStore API base URL is set")
-    public void setBaseURI() {
-        io.restassured.RestAssured.baseURI = ConfigReader.get("baseUrl");
-    }
 
    
     @When("I send a GET request to fetch all books")

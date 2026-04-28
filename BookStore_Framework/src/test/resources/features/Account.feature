@@ -4,8 +4,7 @@
 
 Feature: BookStore Account API Tests
 
-  Background:
-    Given The user API base URL is set
+ 
 
   @BookStoreWebAPI01TC_01 @Valid
   Scenario: Create user with valid username and password
@@ -23,15 +22,14 @@ Feature: BookStore Account API Tests
     Then the response status should be 406
 
   @BookStoreWebAPI01TC_03 @Invalid
-  Scenario Outline: Create user with invalid payloads
-    Given user payload is prepared with "<username>" and "<password>"
+  Scenario Outline: Create user with extra json body
+    Given payload is prepared with "<username>" and "<password>" and "<mobile>"
     When I send a POST request to create a user
     Then the response status should be <expectedStatus>
 
     Examples:
-      | username | password | expectedStatus |
-      |          |          | 400            |
-      | user1    | Test@123 | 400            |
+      | username | password | expectedStatus |mobile|
+      | user1    | Test@123 | 400            |234213|
 
   @BookStoreWebAPI01TC_04 @Invalid
   Scenario: Create user with space username
